@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Nova Fintech</title>
-		<link
-			rel="stylesheet"
-			href="style.css"
-		/>
-		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-	</head>
-	<body>
-		<header>
-			<div
-				class="flex items-center justify-between px-3 py-3 border-b-1 border-gray-100"
-			>
-				<div>
-					<img
-						class="h-10"
-						src="https://freebootstrap.net/demo/nova/assets/images/logo-dark.svg"
-						alt="logo"
-					/>
-				</div>
-				<div class="flex items-center space-x-4">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="16"
-						height="16"
-						viewBox="0 0 16 16"
-					>
-						<path
-							d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
-						/>
-					</svg>
-					<div class="sm:hidden">
-						<button
-							type="button"
-							class="block bg-black px-3 py-3 rounded-full text-gray-50"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke-width="1.5"
-								stroke="currentColor"
-								class="size-6"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-								/>
-							</svg>
-						</button>
-					</div>
-				</div>
-			</div>
-			<!-- Hiding the menu buttons for now, we will need JavaScript here to control the opening -->
-			<!-- <div class="text-gray-500 px-3 pt-10 pb-4">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Nova Fintech</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header>
+      <div
+        class="flex items-center justify-between px-3 py-3 border-b-1 border-gray-100"
+      >
+        <div>
+          <img
+            class="h-10"
+            src="https://freebootstrap.net/demo/nova/assets/images/logo-dark.svg"
+            alt="logo"
+          />
+        </div>
+        <div class="flex items-center space-x-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+            />
+          </svg>
+          <div class="sm:hidden">
+            <button
+              type="button"
+              class="block bg-black px-3 py-3 rounded-full text-gray-50"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Hiding the menu buttons for now, we will need JavaScript here to control the opening -->
+      <!-- <div class="text-gray-500 px-3 pt-10 pb-4">
         <a href="#" class="mt-3 block px-3 py-1 rounded hover:bg-gray-100"
           >Home</a
         >
@@ -77,395 +77,397 @@
           >Contact</a
         >
       </div> -->
-		</header>
-		<main>
-			<section class="flex flex-col px-3 mt-20 mb-20 gap-y-4">
-				<div>
-					<span
-						class="bg-green-50 text-teal-900 text-xs font-semibold p-2 rounded-md tracking-tight"
-						>INNOVATIVE FINTECH SOLUTIONS</span
-					>
-				</div>
-				<div>
-					<h1 class="text-3xl text-gray-900 leading-9 tracking-wide">
-						Secure, Efficient, and User-Friendly Financial Services
-					</h1>
-				</div>
-				<div>
-					<p class="text-gray-600 font-light tracking-wide leading-7">
-						Experience the future of finance with our secure, efficient, and
-						user-friendly financial services.
-					</p>
-				</div>
-				<div>
-					<div
-						class="flex text-base justify-start gap-2 tracking-wide font-medium mt-2 mb-2"
-					>
-						<button
-							class="bg-teal-800 text-gray-50 rounded-md pb-3 pt-3 pl-5 pr-5"
-							type="button"
-						>
-							Get Started Now
-						</button>
-						<div
-							class="flex text-gray-800 pb-3 pt-3 pl-5 pr-5 gap-2 border border-gray-300 rounded-md"
-						>
-							<button type="button">Learn More</button>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke-width="1.5"
-								stroke="currentColor"
-								class="self-center size-4"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-								/>
-							</svg>
-						</div>
-					</div>
-				</div>
-				<div>
-					<p class="text-teal-800 text-sm tracking-wide font-light">
-						TRUSTED BY MAJOR COMPANIES WORLDWIDE
-					</p>
-				</div>
-				<div class="flex justify-between items-center py-2">
-					<img
-						class="w-2/7"
-						src="https://freebootstrap.net/demo/nova/assets/images/logo/actual-size/logo-air-bnb__black.svg"
-						alt="airbnb-logo"
-					/>
-					<img
-						class="w-2/7 p-1"
-						src="https://freebootstrap.net/demo/nova/assets/images/logo/actual-size/logo-ibm__black.svg"
-						alt="ibm-logo"
-					/>
-					<img
-						class="w-2/7"
-						src="https://freebootstrap.net/demo/nova/assets/images/logo/actual-size/logo-google__black.svg"
-						alt="google-logo"
-					/>
-				</div>
-				<div class="flex flex-col items-center">
-					<img
-						class="w-full rounded-2xl mt-5"
-						src="https://freebootstrap.net/demo/nova/assets/images/hero-img-1-min.jpg"
-						alt="hero image"
-					/>
-					<img
-						class="self-start ml-2 -mt-65 w-4/5 rounded-3xl shadow-sm"
-						src="https://freebootstrap.net/demo/nova/assets/images/card-expenses.png"
-						alt="secondary-hero-image"
-					/>
-				</div>
-			</section>
-			<section class="flex flex-col px-3 mt-40 gap-y-4">
-				<div>
-					<span
-						class="bg-green-50 text-teal-900 text-xs font-semibold p-2 rounded-md tracking-tight"
-						>ABOUT US</span
-					>
-				</div>
-				<div>
-					<h2 class="text-2xl text-gray-950 leading-7 font-normal tracking-wider">
-						Experience the future of finance with our secure, efficient, and
-						user-friendly financial services
-					</h2>
-				</div>
-				<div>
-					<p class="text-gray-600 font-light tracking-wide leading-7 mb-4">
-						Founded with the vision of revolutionizing the financial industry, we are
-						a leading fintech company dedicated to providing innovative and secure
-						financial solutions.
-					</p>
-					<p class="text-gray-600 font-light tracking-wide leading-7">
-						Our cutting-edge platform ensures your transactions are safe, streamlined,
-						and easy to manage, empowering you to take control of your financial
-						journey with confidence and convenience.
-					</p>
-				</div>
-				<div>
-					<h4 class="text-sm text-gray-900 font-bold tracking-wide mt-3 mb-2">
-						Key Values and Vision
-					</h4>
-				</div>
-				<ul class="flex flex-wrap">
-					<li class="flex">
-						<span class="block bg-teal-800 px-1 py-1 rounded-full text-gray-50">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke-width="1.5"
-								stroke="currentColor"
-								class="size-4"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="m4.5 12.75 6 6 9-13.5"
-								/>
-							</svg>
-						</span>
-						<span>Innovation</span>
-					</li>
-					<li class="flex">
-						<span>
-							<i
-								><svg
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke-width="1.5"
-									stroke="currentColor"
-									class="size-6"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										d="m4.5 12.75 6 6 9-13.5"
-									/>
-								</svg>
-							</i>
-						</span>
-						<span>Security</span>
-					</li>
-					<li class="flex">
-						<span>
-							<i
-								><svg
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke-width="1.5"
-									stroke="currentColor"
-									class="size-6"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										d="m4.5 12.75 6 6 9-13.5"
-									/>
-								</svg>
-							</i>
-						</span>
-						<span>User-Centric Design</span>
-					</li>
-					<li class="flex">
-						<span>
-							<i
-								><svg
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke-width="1.5"
-									stroke="currentColor"
-									class="size-6"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										d="m4.5 12.75 6 6 9-13.5"
-									/>
-								</svg>
-							</i>
-						</span>
-						<span>Transparency</span>
-					</li>
-					<li class="flex">
-						<span>
-							<i
-								><svg
-									xmlns="http://www.w3.org/2000/svg"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke-width="1.5"
-									stroke="currentColor"
-									class="size-6"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										d="m4.5 12.75 6 6 9-13.5"
-									/>
-								</svg>
-							</i>
-						</span>
-						<span>Empowerment</span>
-					</li>
-				</ul>
-			</section>
-		</main>
-		<!-- Footer -->
-		<footer class="border-t border-slate-200 mt-20">
-			<div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 sm:py-16">
-				<!-- Newsletter -->
-				<div class="sm:flex sm:items-start sm:justify-between">
-					<div class="sm:max-w-2xl">
-						<h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">
-							Join our newsletter
-						</h2>
-						<p class="mt-3 text-slate-600 text-[15px] sm:text-base">
-							Stay updated with our latest templates and offers—join our
-							newsletter today!
-						</p>
-					</div>
+    </header>
+    <main>
+      <section class="flex flex-col px-3 mt-20 mb-20 gap-y-4">
+        <div>
+          <span
+            class="bg-green-50 text-teal-900 text-xs font-semibold p-2 rounded-md tracking-tight"
+            >INNOVATIVE FINTECH SOLUTIONS</span
+          >
+        </div>
+        <div>
+          <h1 class="text-3xl text-gray-900 leading-9 tracking-wide">
+            Secure, Efficient, and User-Friendly Financial Services
+          </h1>
+        </div>
+        <div>
+          <p class="text-gray-600 font-light tracking-wide leading-7">
+            Experience the future of finance with our secure, efficient, and
+            user-friendly financial services.
+          </p>
+        </div>
+        <div>
+          <div
+            class="flex text-base justify-start gap-2 tracking-wide font-medium mt-2 mb-2"
+          >
+            <button
+              class="bg-teal-800 text-gray-50 rounded-md pb-3 pt-3 pl-5 pr-5"
+              type="button"
+            >
+              Get Started Now
+            </button>
+            <div
+              class="flex text-gray-800 pb-3 pt-3 pl-5 pr-5 gap-2 border border-gray-300 rounded-md"
+            >
+              <button type="button">Learn More</button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="self-center size-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="text-teal-800 text-sm tracking-wide font-light">
+            TRUSTED BY MAJOR COMPANIES WORLDWIDE
+          </p>
+        </div>
+        <div class="flex justify-between items-center py-2">
+          <img
+            class="w-2/7"
+            src="https://freebootstrap.net/demo/nova/assets/images/logo/actual-size/logo-air-bnb__black.svg"
+            alt="airbnb-logo"
+          />
+          <img
+            class="w-2/7 p-1"
+            src="https://freebootstrap.net/demo/nova/assets/images/logo/actual-size/logo-ibm__black.svg"
+            alt="ibm-logo"
+          />
+          <img
+            class="w-2/7"
+            src="https://freebootstrap.net/demo/nova/assets/images/logo/actual-size/logo-google__black.svg"
+            alt="google-logo"
+          />
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            class="w-full rounded-2xl mt-5"
+            src="https://freebootstrap.net/demo/nova/assets/images/hero-img-1-min.jpg"
+            alt="hero image"
+          />
+          <img
+            class="self-start ml-2 -mt-65 w-4/5 rounded-3xl shadow-sm"
+            src="https://freebootstrap.net/demo/nova/assets/images/card-expenses.png"
+            alt="secondary-hero-image"
+          />
+        </div>
+      </section>
+      <section class="flex flex-col px-3 mt-40 gap-y-4">
+        <div>
+          <span
+            class="bg-green-50 text-teal-900 text-xs font-semibold p-2 rounded-md tracking-tight"
+            >ABOUT US</span
+          >
+        </div>
+        <div>
+          <h2
+            class="text-2xl text-gray-950 leading-7 font-normal tracking-wider"
+          >
+            Experience the future of finance with our secure, efficient, and
+            user-friendly financial services
+          </h2>
+        </div>
+        <div>
+          <p class="text-gray-600 font-light tracking-wide leading-7 mb-4">
+            Founded with the vision of revolutionizing the financial industry,
+            we are a leading fintech company dedicated to providing innovative
+            and secure financial solutions.
+          </p>
+          <p class="text-gray-600 font-light tracking-wide leading-7">
+            Our cutting-edge platform ensures your transactions are safe,
+            streamlined, and easy to manage, empowering you to take control of
+            your financial journey with confidence and convenience.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-sm text-gray-900 font-bold tracking-wide mt-3 mb-2">
+            Key Values and Vision
+          </h4>
+        </div>
+        <ul class="flex flex-wrap">
+          <li class="flex">
+            <span class="block bg-teal-800 px-1 py-1 rounded-full text-gray-50">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 12.75 6 6 9-13.5"
+                />
+              </svg>
+            </span>
+            <span>Innovation</span>
+          </li>
+          <li class="flex">
+            <span>
+              <i
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 12.75 6 6 9-13.5"
+                  />
+                </svg>
+              </i>
+            </span>
+            <span>Security</span>
+          </li>
+          <li class="flex">
+            <span>
+              <i
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 12.75 6 6 9-13.5"
+                  />
+                </svg>
+              </i>
+            </span>
+            <span>User-Centric Design</span>
+          </li>
+          <li class="flex">
+            <span>
+              <i
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 12.75 6 6 9-13.5"
+                  />
+                </svg>
+              </i>
+            </span>
+            <span>Transparency</span>
+          </li>
+          <li class="flex">
+            <span>
+              <i
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 12.75 6 6 9-13.5"
+                  />
+                </svg>
+              </i>
+            </span>
+            <span>Empowerment</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 mt-20">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 sm:py-16">
+        <!-- Newsletter -->
+        <div class="sm:flex sm:items-start sm:justify-between">
+          <div class="sm:max-w-2xl">
+            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              Join our newsletter
+            </h2>
+            <p class="mt-3 text-slate-600 text-[15px] sm:text-base">
+              Stay updated with our latest templates and offers—join our
+              newsletter today!
+            </p>
+          </div>
 
-					<form class="mt-6 sm:mt-0 sm:min-w-[460px] flex gap-2">
-						<input
-							type="email"
-							placeholder="Email your email"
-							class="w-full rounded-md border border-slate-300 px-4 py-2.5 text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-300"
-						/>
-						<button
-							class="shrink-0 rounded-md bg-emerald-700 px-4 sm:px-5 py-2.5 text-white text-sm font-medium hover:bg-emerald-800 transition"
-						>
-							Subscribe
-						</button>
-					</form>
-				</div>
+          <form class="mt-6 sm:mt-0 sm:min-w-[460px] flex gap-2">
+            <input
+              type="email"
+              placeholder="Email your email"
+              class="w-full rounded-md border border-slate-300 px-4 py-2.5 text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-300"
+            />
+            <button
+              class="shrink-0 rounded-md bg-emerald-700 px-4 sm:px-5 py-2.5 text-white text-sm font-medium hover:bg-emerald-800 transition"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
 
-				<!-- Links grid -->
-				<div
-					class="mt-12 sm:mt-16 grid grid-cols-1 md:grid-cols-3 gap-y-12 gap-x-6"
-				>
-					<!-- About -->
-					<div>
-						<h3 class="text-base font-semibold">About</h3>
-						<p class="mt-4 text-slate-600 max-w-md leading-relaxed">
-							Utilize our tools to develop your concepts and bring your vision
-							to life. Once complete, effortlessly share your creations.
-						</p>
-					</div>
+        <!-- Links grid -->
+        <div
+          class="mt-12 sm:mt-16 grid grid-cols-1 md:grid-cols-3 gap-y-12 gap-x-6"
+        >
+          <!-- About -->
+          <div>
+            <h3 class="text-base font-semibold">About</h3>
+            <p class="mt-4 text-slate-600 max-w-md leading-relaxed">
+              Utilize our tools to develop your concepts and bring your vision
+              to life. Once complete, effortlessly share your creations.
+            </p>
+          </div>
 
-					<!-- Company -->
-					<div>
-						<h3 class="text-base font-semibold">Company</h3>
-						<ul class="mt-4 space-y-3 text-slate-600">
-							<li>
-								<a
-									href="#"
-									class="hover:text-slate-900"
-									>Leadership</a
-								>
-							</li>
-							<li class="flex items-center gap-2">
-								<span>Careers</span>
-								<span
-									class="text-[11px] ml-2 rounded-full bg-slate-100 px-2 py-0.5 text-slate-700"
-								>
-									we're hiring
-								</span>
-							</li>
-							<li class="text-slate-500 cursor-default">Case Studies</li>
-							<li>Terms &amp; Conditions</li>
-							<li class="text-slate-500">Privacy Policy</li>
-							<li class="text-slate-500">404 page</li>
-						</ul>
-					</div>
+          <!-- Company -->
+          <div>
+            <h3 class="text-base font-semibold">Company</h3>
+            <ul class="mt-4 space-y-3 text-slate-600">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-slate-900"
+                  >Leadership</a
+                >
+              </li>
+              <li class="flex items-center gap-2">
+                <span>Careers</span>
+                <span
+                  class="text-[11px] ml-2 rounded-full bg-slate-100 px-2 py-0.5 text-slate-700"
+                >
+                  we're hiring
+                </span>
+              </li>
+              <li class="text-slate-500 cursor-default">Case Studies</li>
+              <li>Terms &amp; Conditions</li>
+              <li class="text-slate-500">Privacy Policy</li>
+              <li class="text-slate-500">404 page</li>
+            </ul>
+          </div>
 
-					<!-- Accounts -->
-					<div>
-						<h3 class="text-base font-semibold">Accounts</h3>
-						<ul class="mt-4 space-y-[10px] text-slate-600">
-							<li class="text-slate-500 cursor-default">Register</li>
-							<li class="text-slate-500">Sign in</li>
-							<li class="text-slate-500">Fogot Password</li>
-							<li class="text-slate-500">Coming soon</li>
-							<li class="text-slate-500">Portfolio Masonry</li>
-						</ul>
-					</div>
+          <!-- Accounts -->
+          <div>
+            <h3 class="text-base font-semibold">Accounts</h3>
+            <ul class="mt-4 space-y-[10px] text-slate-600">
+              <li class="text-slate-500 cursor-default">Register</li>
+              <li class="text-slate-500">Sign in</li>
+              <li class="text-slate-500">Fogot Password</li>
+              <li class="text-slate-500">Coming soon</li>
+              <li class="text-slate-500">Portfolio Masonry</li>
+            </ul>
+          </div>
 
-					<!-- Contact -->
-					<div>
-						<h3 class="text-base font-semibold">Contact</h3>
-						<ul class="mt-4 space-y-4 text-[15px] text-slate-600">
-							<li class="flex items-start gap-3">
-								<svg
-									class="w-5 h-5 mt-0.5 text-slate-500"
-									fill="none"
-									stroke="currentColor"
-									viewBox="0 0 24 24"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="1.6"
-										d="M12 11a3 3 0 100-6 3 3 0 000 6z"
-									/>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="1.6"
-										d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-									/>
-								</svg>
-								<div>
-									123 Main Street Apt 4B<br />
-									Springfield,<br />
-									IL 62701 United States
-								</div>
-							</li>
-							<li class="flex items-center gap-3">
-								<svg
-									class="w-5 h-5 text-slate-500"
-									fill="none"
-									stroke="currentColor"
-									viewBox="0 0 24 24"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="1.6"
-										d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-									/>
-								</svg>
-								<span>info@mydomain.com</span>
-							</li>
-							<li class="flex items-center gap-3">
-								<svg
-									class="w-5 h-5 text-slate-500"
-									fill="none"
-									stroke="currentColor"
-									viewBox="0 0 24 24"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="1.6"
-										d="M3 5a2 2 0 012-2h1.6a1 1 0 01.95.68l1.2 3.2a1 1 0 01-.3 1.12L7.5 9.5a14 14 0 006.99 6.99l1.5-1.95a1 1 0 011.12-.3l3.2 1.2a1 1 0 01.68.95V19a2 2 0 01-2 2h-1c-9.39 0-17-7.61-17-17V5z"
-									/>
-								</svg>
-								<span>+1 (234) 5678 9900</span>
-							</li>
-							<li class="flex items-center gap-3">
-								<svg
-									class="w-5 h-5 text-slate-500"
-									fill="none"
-									stroke="currentColor"
-									viewBox="0 0 24 24"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="1.6"
-										d="M12 3a9 9 0 100 18 9 9 0 000-18zM2.5 12h19M12 2.5c2.5 2.4 4 5.7 4 9.5s-1.5 7.1-4 9.5m0-19c-2.5 2.4-4 5.7-4 9.5s1.5 7.1 4 9.5"
-									/>
-								</svg>
-								<span>FreeBootstrap.net</span>
-							</li>
-						</ul>
-					</div>
-				</div>
+          <!-- Contact -->
+          <div>
+            <h3 class="text-base font-semibold">Contact</h3>
+            <ul class="mt-4 space-y-4 text-[15px] text-slate-600">
+              <li class="flex items-start gap-3">
+                <svg
+                  class="w-5 h-5 mt-0.5 text-slate-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.6"
+                    d="M12 11a3 3 0 100-6 3 3 0 000 6z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.6"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                  />
+                </svg>
+                <div>
+                  123 Main Street Apt 4B<br />
+                  Springfield,<br />
+                  IL 62701 United States
+                </div>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg
+                  class="w-5 h-5 text-slate-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.6"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                <span>info@mydomain.com</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg
+                  class="w-5 h-5 text-slate-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.6"
+                    d="M3 5a2 2 0 012-2h1.6a1 1 0 01.95.68l1.2 3.2a1 1 0 01-.3 1.12L7.5 9.5a14 14 0 006.99 6.99l1.5-1.95a1 1 0 011.12-.3l3.2 1.2a1 1 0 01.68.95V19a2 2 0 01-2 2h-1c-9.39 0-17-7.61-17-17V5z"
+                  />
+                </svg>
+                <span>+1 (234) 5678 9900</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg
+                  class="w-5 h-5 text-slate-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.6"
+                    d="M12 3a9 9 0 100 18 9 9 0 000-18zM2.5 12h19M12 2.5c2.5 2.4 4 5.7 4 9.5s-1.5 7.1-4 9.5m0-19c-2.5 2.4-4 5.7-4 9.5s1.5 7.1 4 9.5"
+                  />
+                </svg>
+                <span>FreeBootstrap.net</span>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-				<div class="mt-10 text-sm text-slate-500">
-					© 2025 Example Co. All rights reserved.
-				</div>
-			</div>
-		</footer>
-	</body>
+        <div class="mt-10 text-sm text-slate-500">
+          © 2025 Example Co. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
