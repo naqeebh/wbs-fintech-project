@@ -168,7 +168,7 @@
 </head>
 <body>
    <!--price-->
-    <section class="border-1 flex-col items-center justify-center text-center space-y-4 bg pt-10 pb-12 px-4 rounded-lg max-w-10xl w-full" >
+    <section class="border-1 flex-col items-center justify-center text-center space-y-4  pt-10 pb-12 px-4 rounded-lg max-w-10xl w-full" >
     <div> <!---- the pricing-->
     <span class="text-center text-2xl  bg-green-50 text-black font-normal px-6 py-2 rounded-sm" > 
             Pricing
@@ -180,7 +180,7 @@
      <div>
         <p class="text-center">Experience the future of finance with our secure, efficient, and user-friendly financial services </p>
      </div>
-     <div class="flex justify-center gap-4" >
+     <div class="flex flex-col md:flex-row sm:flex-row gap-4 " >
         <div class="flex-1 border border-gray p-4 rounded-lg">
         <h2 class="font-semibold text-left text-2xl">Personal</h2>
         <p class="text-left text-1.5xl">Choose a plan that fits your personal financial needs and start managing your finances more effectively. </p>
@@ -223,7 +223,7 @@
 
      </div>
     </section>   
-    <!--this section contains how it works page-->
+    <!--this section contains "how it works" page-->
     <section>
         <div class="flex justify-center mb-2 p-4">
             <span class=" text-center bg-green-50 font-semibold text-1xl px-6 py-2 rounded-sm">
@@ -237,33 +237,61 @@
             <p>Our platform is designed to make managing your finances simple and efficient. Follow these easy steps to get started.</p>
         </div>
         <div class=" p-10">
-        <di class=" flex justify-center gap-20 border-gray p-4 rounded" >
+        <!--<di class=" flex justify-center gap-20 border-gray p-4 rounded sm:flex-row" >
 
         <div class="w-18 h-18 bg-cyan-800 text-white rounded-full flex items-center justify-center text-xl font-bold">1</div>
         <div class="w-18 h-18 bg-cyan-800 text-white rounded-full flex items-center justify-center text-xl font-bold">2</div>
         <div class="w-18 h-18 bg-cyan-800 text-white rounded-full flex items-center justify-center text-xl font-bold">3</div>
         <div class="w-18 h-18 bg-cyan-800 text-white rounded-full flex items-center justify-center text-xl font-bold">4</div>
         </di>
-        
-        <div class="flex justify-center gap-4 p-10">
-            <div >
-                <h2 class=" font-semibold text-1xl text-center" >Sign Up</h2>
-                <p class="text-1 text-center"> Visit our website or download our app to sign up. Provide basic information to set up your secure account</p>
+      -->
+        <div class="flex justify-center gap-4 p-10 lg:flex-row md:flex-col">
+
+          <div>
+            <div  class="text-center flex justify-center">
+              <div class="w-18 h-18 bg-cyan-800 text-white rounded-full flex items-center justify-center text-xl font-bold">1</div>
             </div>
 
-            <div>
-                <h2 class=" font-semibold text-1xl text-center">Set Up Your Profile</h2>
-                <p class="text-1 text-center">Add your personal or business details to tailor the platform to your specific needs</p>
+              <div class=" text-center">
+              <h2 class=" font-semibold text-1xl text-center" >Sign Up</h2>
+              <p class="text-1 text-center"> Visit our website or download our app to sign up. Provide basic information to set up your secure account</p>
+              </div>
+           </div>
+
+           <div>
+            <div  class="text-center flex justify-center">
+              <div class="w-18 h-18 bg-cyan-800 text-white rounded-full flex items-center justify-center text-xl font-bold">2</div>
             </div>
 
-            <div>
-                <h2 class="font-semibold text-center text-1xl ">Explore Features</h2>
-                <p class="text-center text-1">Access your dashboard for a summary of your finances: balances, recent transactions, and insights.</p>
+              <div class=" text-center">
+              <h2 class=" font-semibold text-1xl text-center" > Set Up Your Profile</h2>
+              <p class="text-1 text-center"> Visit our website or download our app to sign up. Provide basic information to set up your secure account</p>
+              </div>
+           </div>
+
+
+           <div>
+            <div  class="text-center flex justify-center">
+              <div class="w-18 h-18 bg-cyan-800 text-white rounded-full flex items-center justify-center text-xl font-bold">3</div>
             </div>
-            <div>
-                <h2 class=" font-semibold text-1xl text-center">Invest and Grow</h2>
-                <p class=" text-1 text-center">Discover a variety of investment opportunities tailored to your financial goals.</p>
+
+              <div class=" text-center">
+              <h2 class=" font-semibold text-1xl text-center" > Explore Features</h2>
+              <p class="text-1 text-center"> Visit our website or download our app to sign up. Provide basic information to set up your secure account</p>
+              </div>
+           </div>
+
+           <div>
+            <div  class="text-center flex justify-center">
+              <div class="w-18 h-18 bg-cyan-800 text-white rounded-full flex items-center justify-center text-xl font-bold">4</div>
             </div>
+
+              <div class=" text-center">
+              <h2 class=" font-semibold text-1xl text-center" >Invest and Grow</h2>
+              <p class="text-1 text-center"> Visit our website or download our app to sign up. Provide basic information to set up your secure account</p>
+              </div>
+           </div>
+
         </div>
         <div class="class p-4 px-auto bg-cyan-800 rounded-lg">
             <div class="flex justify-center text-center gap-8 p-8">
@@ -292,13 +320,13 @@
                Empowering Financial Innovation Through Cutting-Edge Services 
             </p>  
         </div>
-        <div class="flex justify-center text-center gap-4 p-2">
-            <div class=" border-2 border-gray-400 p-2 w-70 rounded-lg">
+        <div class="flex justify-center text-center gap-4 p-2 lg:flex-row md: flex-col sm:flex-col">
+            <div class=" border-2 border-gray-400 p-2 w-full rounded-lg">
                 <div>
                     <img src="https://static.vecteezy.com/system/resources/previews/015/605/063/non_2x/digital-payment-mobile-icon-outline-style-vector.jpg"
                     class="w-15 h-16">
                 </div>
-<!--this part contains all the service -->
+                <!--this part contains all the service -->
                 <span class="font-semibold text-left "> Digital Payment</span>
                 <p class=" font-light text-left">
                 Seamless and secure transactions through various digital platforms, 
@@ -307,7 +335,7 @@
                 </p>
             </div>
 
-             <div class=" border-2 border-gray-400 p-4 w-70 rounded-lg">
+             <div class=" border-2 border-gray-400 p-4 w-full rounded-lg">
                 <div>
                     <img src="https://cdn-icons-png.freepik.com/512/15391/15391761.png"
                     class="w-15 h-16">
@@ -321,7 +349,7 @@
                 </p>
             </div>
 
-             <div class=" border-2 border-gray-400 p-4 w-70 rounded-lg">
+             <div class=" border-2 border-gray-400 p-4 w-full rounded-lg">
                 <div>
                     <img src="https://img.freepik.com/premium-psd/world-map-with-dollar-sign-it_1309609-75283.jpg"
                     class="w-15 h-16">
@@ -332,11 +360,8 @@
                 Fast and accessible lending services that provide personal and business loans through online platforms, simplifying the borrowing process.
             </p>
             </div>
-        </div>
-
-
-        <div class="flex justify-center text-center gap-4 p-2">
-            <div class=" border-2 border-gray-400 p-2 w-70 rounded-lg">
+        
+            <div class=" border-2 border-gray-400 p-2 w-full rounded-lg">
                 <div>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrvDpila4GBjoV0IREbd1DoAGKQYu28SyKUw&s"
                     class="w-15 h-16">
@@ -349,7 +374,7 @@
                 </p>
             </div>
 
-             <div class=" border-2 border-gray-400 p-4 w-70 rounded-lg">
+             <div class=" border-2 border-gray-400 p-4 w-full rounded-lg">
                 <div>
                     <img src="https://img.freepik.com/premium-vector/exchange-icon-dollar-bitcoin-symbols-with-arrows-vector-illustration_646737-1172.jpg"
                     class="w-15 h-16">
@@ -362,7 +387,7 @@
                 </p>
             </div>
 
-             <div class=" border-2 border-gray-400 p-4 w-70 rounded-lg">
+             <div class=" border-2 border-gray-400 p-4 w-full rounded-lg">
                 <div>
                     <img src="https://thumbs.dreamstime.com/b/mobile-pay-black-icon-design-smartphone-bank-card-digital-payment-sign-vector-illustration-mobile-pay-black-icon-design-156252882.jpg"
                     class="w-15 h-16">
@@ -376,7 +401,6 @@
         </div>
     </section>
 
-
 <!------- this section contains the testimonials from client-->
     <section>
       <div class="text-center pt-10"> <span class="bg-green-50 py-4 px-4 rounded-lg"> TESTIMONIALS</span></div>
@@ -386,7 +410,6 @@
       <div class="text-center pt-8 text-1xl font-normal tracking-wide">
         <p>Real Stories of Success and Satisfaction from Our Diverse Community</p>
       </div>
-      
       
       <div class=" mt-8 p-5 ">
         <div class="flex flex-col md:flex-row gap">
